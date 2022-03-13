@@ -1,4 +1,2 @@
-/dist/
-/node_modules/
-/dist/bundle.js
+/backup
 /yarn-error.log
