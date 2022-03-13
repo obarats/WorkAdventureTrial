@@ -1,0 +1,12 @@
+import * as tg from "generic-type-guard";
+export declare const isHasPlayerMovedEvent: tg.TypeGuard<object & {
+    direction: string;
+    moving: boolean;
+    x: number;
+    y: number;
+}>;
+/**
+ * A message sent from the game to the iFrame to notify a movement from the current player.
+ */
+export declare type HasPlayerMovedEvent = tg.GuardedType<typeof isHasPlayerMovedEvent>;
+export declare type HasPlayerMovedEventCallback = (event: HasPlayerMovedEvent) => void;
